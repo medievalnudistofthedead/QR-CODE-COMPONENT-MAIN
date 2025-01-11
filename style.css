@@ -6,10 +6,11 @@ body {
 }
 .outside {
     background-color: #FFFFFF;
-    width: 320px;
+    max-width: 320px;
+    min-width: 288px;
     height: 500px;
     border-radius: 15px;
-    margin: 20vh auto 10vh auto;
+    margin: 20vh auto 5vh auto;
 }
 img {
     padding: 1rem;
@@ -23,6 +24,7 @@ h1 {
     color: #1F314F;
     font-size: 22px;
     line-height: 120%;
+    font-weight: 700;
 }
 p {
     text-align: center;
@@ -31,6 +33,7 @@ p {
     font-size: 15px;
     letter-spacing: 0.2px;
     line-height: 140%;
+    font-weight: 400;
 }
 .attribution {
     font-size: 11px;
