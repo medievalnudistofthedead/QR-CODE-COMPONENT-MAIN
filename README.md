@@ -20,6 +20,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ![](./screenshot-main.jpg)
 
+![](./screenshot-mobile.jpg)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/medievalnudistofthedead/QR-CODE-COMPONENT-MAIN)
