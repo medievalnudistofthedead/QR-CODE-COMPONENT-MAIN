@@ -1,42 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  padding: 16px;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
 body {
     background-color: #D5E1EF;
-    font-family: "Outfit", serif;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    gap: 1rem;
 }
 .outside {
     background-color: #FFFFFF;
-    max-width: 320px;
-    min-width: 288px;
-    height: 500px;
-    border-radius: 15px;
-    margin: 20vh auto 5vh auto;
+    max-width: 20rem;
+    border-radius: 16px;
+    padding: 16px;
 }
 img {
-    padding: 1rem;
-    width: 90%;
-    border-radius: 30px;   
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: auto;   
 }
-h1 {
-    text-align: center;
-    margin: 0.1rem 0;
-    padding: 0 1.5rem;
+h2 {
     color: #1F314F;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 120%;
     font-weight: 700;
 }
 p {
-    text-align: center;
-    padding: 0.1rem 1.5rem;
     color: #68778D;
-    font-size: 15px;
+    font-size: 1rem;
     letter-spacing: 0.2px;
     line-height: 140%;
-    font-weight: 400;
 }
-.attribution {
-    font-size: 11px;
-    text-align: center;
+.attribution  p{
+    font-size: 0.7rem;
     color: #3E52A3;
 }
